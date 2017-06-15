@@ -67,17 +67,60 @@
             </div>
         </div>
     </nav>
-    <header class="header-top">
+    <section class="header-top header-img-1">
         <div class="header-title">
             <h1>了解自己，才能不斷突破</h1>
             <p>恭喜您解開所有進階功能</p>
             <p>請盡情享用RunningQuotient提供的所有服務，更有效率地提升跑步運動表現吧</p>
             <div class="header-animate">
-                <i class="fa fa-2x fa-angle-double-down" aria-hidden="true"></i>
+            	<a href="#target" id="header-target"><i class="fa fa-2x fa-angle-double-down" aria-hidden="true"></i></a>
             </div>
         </div>
-    </header>
-    <section>
+    </section>
+    <section class="header-top header-img-2" id="target">
+        <div class="header-title">
+            <h2>自己的狀況自己掌控</h2>
+            <hr class="landing">
+            
+            <h3><i class="fa fa-line-chart" aria-hidden="true"></i> 狀況指數圖表</h3>
+            <span>RunningQuotient會根據每一次的訓練與比賽，計算出你目前的體能、疲勞與當前的狀況，這是你在賽前進行減量與調整狀況的絕佳工具！</span>
+            <a href="#" class="btn btn-success btn-lg">了解更多</a>
+        </div>
+    </section>
+    <section class="header-top header-img-3">
+        <div class="header-title">
+            <h2>技術無極限</h2>
+            <hr class="landing">
+            
+            <h3><i class="fa fa-line-chart" aria-hidden="true"></i> 步頻、觸地時間、移動參數分析</h3>
+            <span>每一位跑者的體能與肌力都有天生的限制，但技術卻可以經由鍛鍊不斷地進步！透過觀察不同配速下的技術數據，可以讓你知道自己技術上的缺點在哪裡。
+            </span>
+            <a href="#" class="btn btn-success btn-lg">了解更多</a>
+        </div>
+    </section>
+    <section class="header-top header-img-4">
+        <div class="header-title">
+            <h2>跑力進步不停步</h2>
+            <hr class="landing">
+
+            <h3><i class="fa fa-line-chart" aria-hidden="true"></i> 即時跑力圖表</h3>
+            <span>同樣的心率下跑出愈快的配速，就代表你的實力提升或狀況較佳；RunningQuotient利用這樣的概念，替跑者推算出每次訓練或比賽中的能力，並透過圖表的方式呈現跑力的變化趨勢。
+            </span>
+            <a href="#" class="btn btn-success btn-lg">了解更多</a>
+        </div>
+    </section>
+    <section class="header-top header-img-5">
+        <div class="header-title">
+            <h2>量化你的訓練壓力</h2>
+            <hr class="landing">
+
+            <h3><i class="fa fa-line-chart" aria-hidden="true"></i> 訓練指數</h3>
+            <span>每一次跑步都會對身體造成不同程度的壓力，RunningQuotient透過每一筆紀錄的心率、配速與坡度等數據，並根據你的個人資料，計算出「訓練指數」，用來衡量訓練的壓力有多大。
+            </span>
+            <a href="#" class="btn btn-success btn-lg">了解更多</a>
+        </div>
+    </section>
+    <!-- <section>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -142,9 +185,20 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <script src="public/js/vender.js"></script>
-    <script src="public/js/vender.js"></script>
-</body>
+    <script>
+    	$(document).ready(function(){
+    		$('#header-target').click(function(e){
+    			e.preventDefault();
+    			var connect = $('#header-target').attr('href');
+        var position = $(connect).offset().top;
+        $('body').stop().animate({
+            scrollTop: position
+        }, 700);
+    	})
+    		})
 
+    </script>
+</body>
 </html>

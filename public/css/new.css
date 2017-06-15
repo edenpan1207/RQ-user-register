@@ -114,109 +114,74 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("http://gdurl.com/zjo9/download");
+  text-align: center;
   background-position: center;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 60px; }
+  -o-background-size: cover; }
+
+.header-img-1 {
+  background-image: url(http://gdurl.com/zjo9/download); }
+
+.header-img-2 {
+  background-image: url(http://gdurl.com/4p8C); }
+
+.header-img-3 {
+  background-image: url(http://gdurl.com/cOkF); }
+
+.header-img-4 {
+  background-image: url(http://gdurl.com/ybb8); }
+
+.header-img-5 {
+  background-image: url(http://gdurl.com/hp5U); }
 
 .header-title {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 80%;
-  padding: 20px 0 50px 0;
+  padding: 20px 0 30px 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff; }
   .header-title h1 {
     font-size: 50px;
     font-weight: bold;
     padding-bottom: 20px; }
+  .header-title h2 {
+    font-size: 36px;
+    font-weight: bold; }
+  .header-title h3 {
+    font-size: 26px;
+    color: #E7F0E9;
+    margin: 25px 0 5px 0; }
+    .header-title h3 .fa {
+      padding-left: 0; }
   .header-title p {
     font-size: 22px;
     padding: 0 35px;
     margin-bottom: 0; }
+  .header-title span {
+    display: block;
+    border: 2px solid #fff;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 16px; }
 
 .header-animate {
   padding: 15px;
   margin-top: 15px; }
-  .header-animate .fa {
-    display: block;
-    position: relative;
-    padding-left: 0;
-    -webkit-animation: mymove 1.5s infinite;
-    animation: mymove 1.5s infinite; }
-
-.box-content {
-  margin-bottom: 30px;
-  background-color: #fff; }
-  .box-content:after {
-    content: "";
-    clear: both;
-    display: table; }
-
-.box-inner-img {
-  width: 50%;
-  padding: 0;
-  float: left;
-  background-color: gray;
-  height: 100%; }
-  .box-inner-img > img {
-    width: 100%;
-    opacity: 0.6; }
-  .box-inner-img h2 {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 25px;
+  .header-animate #header-target {
     color: #fff; }
-
-.box-inner {
-  width: 50%;
-  float: right;
-  padding-top: 5%;
-  padding: 20px 50px 0 50px;
-  text-align: center;
-  margin-top: 30px; }
-  .box-inner img {
-    width: 100px;
-    height: auto; }
-  .box-inner h3 {
-    font-weight: bold; }
-  .box-inner p {
-    margin: 15px 0; }
-  .box-inner .btn {
-    margin-top: 10px; }
-
-@media (max-width: 990px) {
-  .box-inner {
-    margin-top: 5px; } }
-
-.box-content-bg {
-  width: 100%;
-  background-image: url(http://gdurl.com/xvgf);
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 30px; }
-
-.bg-index {
-  height: 100%;
-  padding: 20px 50px 35px 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  text-align: center;
-  margin: 0 auto; }
-  .bg-index h2 {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 3px;
-    display: inline-block; }
-  .bg-index p {
-    margin-bottom: 0; }
+    .header-animate #header-target:hover, .header-animate #header-target:active, .header-animate #header-target:visited, .header-animate #header-target:focus {
+      text-decoration: none;
+      color: #dadada; }
+    .header-animate #header-target .fa {
+      display: block;
+      position: relative;
+      padding-left: 0;
+      -webkit-animation: mymove 1.5s infinite;
+      animation: mymove 1.5s infinite; }
