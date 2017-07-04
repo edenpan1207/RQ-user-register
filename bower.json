@@ -1,0 +1,17 @@
+{
+  "name": "premiun-page",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "edenpan1207 <xadam69@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
