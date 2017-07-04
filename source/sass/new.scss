@@ -57,7 +57,16 @@ h2 {
     border-top: 2px solid #fff;
 }
 
+/* ul's default setting */
+
+.menu-default {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
 .content-position {
+    color: #fff;
     @include text
 }
 
@@ -74,9 +83,9 @@ h2 {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: #71A9F7;
+    color: #212F3D;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    font-family: 'Microsoft JhengHei', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     font-style: italic;
     font-style: oblique;
     font-size: 1.8em;
@@ -122,13 +131,13 @@ h2 {
         border-color: rgba(255, 255, 255, 0.3);
     }
     .navbar-default.affix .navbar-header .navbar-brand {
-        color: #37761D;
+        
         font-size: 1.6em;
         font-weight: bold;
     }
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: rgba(255, 255, 255, 1);
+        color: gray;
     }
     .navbar-default .nav > li > a,
     .navbar-default .nav > li > a:focus {
@@ -220,9 +229,6 @@ h2 {
     }
 }
 
-body {
-    background-color: #ececec;
-}
 
 .header-top {
     position: relative;
@@ -238,7 +244,7 @@ body {
 }
 
 .header-img {
-    background-image: url(http://gdurl.com/zRAF);
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/4.jpg);
 }
 
 .header-title {
@@ -341,15 +347,18 @@ body {
     display: inline-block;
     .thumbnail {
         padding: 0;
+        border: 0;
     }
     .caption {
         h3 {
             font-weight: bold;
+            margin-top: 0;
         }
         p {
             font-size: 18px;
             background-color: #dadada;
             padding: 5px;
+            margin-bottom: 0;
         }
         ul {
             text-align: left;
@@ -358,50 +367,50 @@ body {
 }
 
 
-/* ul's default setting */
-
-.menu-default {
-    text-align: left;
-    list-style: none;
-    padding-left: 0;
-}
-
-
 /* course introduce */
 
 .course-menu {
     li {
+        text-align: center;
         img {
             width: 100%;
         }
         h3 {
-            font-size: 42px;
+            font-size: 36px;
             padding-bottom: 30px;
+            span {
+                padding-top: 10px;
+                display: block;
+            }
 
+        }
+        p {
+            padding: 20px 0 ;
         }
     }
 }
 
-.course-menu-left {
-    text-align: right;
-    // img {
-    //     width: 100%;
-    // }
+.course-menu-img {
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/12.jpg);
+    min-height: 400px;
 }
 
-// .course-menu-right {
-//     img {
-//         width: 100%;
-//     }
+// .course-menu-left {
+//     text-align: right;
+    
 // }
+
+
+
+
 .signup-menu {
     padding: 0px 20px 20px 20px;
     ;
     padding-left: 20px;
     border-radius: 3px;
     background-color: #fff;
-    box-shadow: 0 3px 5px #dadada;
-    > li {
+    
+     li {
         h3 {
             border-bottom: 5px solid #71A9F7;
             display: inline-block;
@@ -411,6 +420,7 @@ body {
         ul {
             li {
                 word-spacing: 2px;
+                line-height: 1.8em;
             }
         }
     }
