@@ -35,7 +35,7 @@ h2 {
   font-size: 50px; }
 
 .hr-line {
-  width: 5%;
+  width: 50px;
   border-color: gray;
   border-width: 3px; }
 
@@ -125,7 +125,7 @@ h2 {
   .navbar-header {
     float: none; }
   .navbar-default .navbar-header .navbar-brand {
-    color: #37761D; }
+    font-size: 24px; }
   .navbar-left,
   .navbar-right {
     float: none !important; }
@@ -238,6 +238,17 @@ h2 {
       -webkit-animation: mymove 1.5s infinite;
       animation: mymove 1.5s infinite; }
 
+@media (max-width: 767px) {
+  .header-top {
+    background-attachment: initial; } }
+
+@media (max-width: 385px) {
+  .header-title h1 {
+    font-size: 55px; }
+  .header-title h1 small {
+    font-size: 26px; } }
+
+/* introduce content */
 .introduce-content > p {
   margin-bottom: 50px;
   font-size: 16px;
@@ -248,6 +259,13 @@ h2 {
   .introduce-content-text p {
     font-size: 18px;
     margin-bottom: 3px; }
+
+@media (max-width: 568px) {
+  .introduce-content-text p {
+    font-size: 14px;
+    margin-bottom: 12px; }
+  aside .btn {
+    width: 100%; } }
 
 /* coach */
 .coach-flow {
@@ -282,21 +300,44 @@ h2 {
 
 .course-menu-img {
   background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/12.jpg);
-  min-height: 400px; }
+  min-height: 480px; }
 
 .signup-menu {
   padding: 0px 20px 20px 20px;
   padding-left: 20px;
   border-radius: 3px;
-  background-color: #fff; }
+  background-color: #fff;
+  list-style: none; }
   .signup-menu li h3 {
     border-bottom: 5px solid #71A9F7;
     display: inline-block;
     padding-bottom: 3px; }
-  .signup-menu li ol li,
-  .signup-menu li ul li {
-    word-spacing: 2px;
-    line-height: 1.8em; }
+  .signup-menu li ol,
+  .signup-menu li ul {
+    padding: 10px 10px 10px 35px;
+    background-color: #ececec; }
+    .signup-menu li ol li,
+    .signup-menu li ul li {
+      word-spacing: 2px;
+      line-height: 1.8em; }
+
+.promote-ins {
+  padding: 10px;
+  background-color: #ececec; }
+  .promote-ins a {
+    display: inline-block;
+    width: 50px;
+    height: 50px; }
+    .promote-ins a p {
+      font-size: 18px; }
+    .promote-ins a img {
+      width: 100%;
+      border-radius: 10px; }
+
+@media (max-width: 568px) {
+  .promote-ins a {
+    display: block;
+    margin-bottom: 5px; } }
 
 .date-menu > li {
   margin-bottom: 10px;
