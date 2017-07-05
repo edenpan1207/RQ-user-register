@@ -49,7 +49,7 @@ h2 {
 
 .hr-line {
     width: 50px;
-    border-color: gray;
+    border-color: #dadada;
     border-width: 3px;
 }
 
@@ -108,7 +108,8 @@ h2 {
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
     // color: #fff !important;
-    background-color: darkgray;
+    background-color: #454545;
+    transition: 1s all;
 }
 
 .navbar-default .nav > li.active > a,
@@ -145,7 +146,7 @@ h2 {
     }
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
-        color: white;
+        color: #fff;
     }
     .navbar-default.affix {
         background-color: white;
@@ -325,9 +326,8 @@ h2 {
 
 @media(max-width:767px) {
     .header-top {
-    background-attachment: initial;
-}
-
+        background-attachment: initial;
+    }
 }
 
 @media (max-width:385px) {
@@ -344,29 +344,29 @@ h2 {
 
 .introduce-content {
     > p {
-        margin-bottom: 50px;
+        margin-top: 35px;
         font-size: 16px;
         text-indent: 2em;
     }
 }
 
-.introduce-content-text {
-    font-weight: bold;
-    p {
-        font-size: 18px;
-        margin-bottom: 3px;
+// .introduce-content-text {
+//     font-weight: bold;
+//     p {
+//         font-size: 18px;
+//         margin-bottom: 3px;
+//     }
+// }
+@media(max-width:568px) {
+    // .introduce-content-text p {
+    //     font-size: 14px;
+    //     margin-bottom: 12px;
+    // }
+    aside .btn {
+        width: 100%;
     }
 }
 
-@media(max-width:568px) {
-    .introduce-content-text p {
-    font-size: 14px;
-    margin-bottom: 12px;
-}
-aside .btn {
-    width: 100%;
-}
-}
 
 /* coach */
 
@@ -389,7 +389,14 @@ aside .btn {
         }
         ul {
             text-align: left;
+            margin: 15px 0;
         }
+    }
+}
+
+.camp-text-adjust {
+    > p {
+        text-align: left;
     }
 }
 
@@ -417,8 +424,15 @@ aside .btn {
 }
 
 .course-menu-img {
-    background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/12.jpg);
+    background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/bg-ua-camp.jpg);
     min-height: 480px;
+}
+
+@media(max-width:568px) {
+    .course-menu li h3 {
+    font-size: 28px;
+    padding-bottom: 15px;
+    }
 }
 
 // .course-menu-left {
@@ -450,39 +464,72 @@ aside .btn {
 }
 
 .promote-ins {
-    padding: 10px;
+    padding: 15px;
     background-color: #ececec;
-    a {
+    p {
+        font-size: 18px;
+    }
+    img {
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        p {
-            font-size: 18px;
-        }
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
+        // width: 50px;
+        // height: 50px;
+        max-width: 100%;
+        height: auto;
+        // border-radius: 10px;
+    }
+}
+
+.img-adjust {
+    width: 70%;
+}
+
+.promote-grid {
+    border-right: 1px solid #fff;
+}
+
+@media(max-width:767px) {
+    
+    .promote-grid {
+   
+    padding-bottom: 35px;
     }
 }
 
 @media(max-width:568px) {
     .promote-ins a {
-    display: block;
+        display: block;
+        margin-bottom: 5px;
+    }
     
-    margin-bottom: 5px;
-}
 }
 
+
+
 .date-menu {
-    > li {
-        margin-bottom: 10px;
-        padding: 5px 25px 25px 25px;
-        border-radius: 3px;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
+    padding: 20px 20px 15px 5px;
+    border-radius: 3px;
+    line-height: 1.8em;
+    border: 10px solid #454545;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    h3 {
+        font-size: 30px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+        
     }
 }
+
+.date-outbox {
+    min-height: 420px;
+}
+
+// @media(max-width:568px) {
+//     #date > h2 > span {
+//         display: block;
+//     }
+// }
 
 .footer-section {
     background-color: #dadada;

@@ -36,7 +36,7 @@ h2 {
 
 .hr-line {
   width: 50px;
-  border-color: gray;
+  border-color: #dadada;
   border-width: 3px; }
 
 .hr-light {
@@ -82,7 +82,8 @@ h2 {
 
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  background-color: darkgray; }
+  background-color: #454545;
+  transition: 1s all; }
 
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
@@ -107,7 +108,7 @@ h2 {
     color: gray; }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: white; }
+    color: #fff; }
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05); }
@@ -250,20 +251,11 @@ h2 {
 
 /* introduce content */
 .introduce-content > p {
-  margin-bottom: 50px;
+  margin-top: 35px;
   font-size: 16px;
   text-indent: 2em; }
 
-.introduce-content-text {
-  font-weight: bold; }
-  .introduce-content-text p {
-    font-size: 18px;
-    margin-bottom: 3px; }
-
 @media (max-width: 568px) {
-  .introduce-content-text p {
-    font-size: 14px;
-    margin-bottom: 12px; }
   aside .btn {
     width: 100%; } }
 
@@ -282,7 +274,11 @@ h2 {
     padding: 5px;
     margin-bottom: 0; }
   .coach-flow .caption ul {
-    text-align: left; }
+    text-align: left;
+    margin: 15px 0; }
+
+.camp-text-adjust > p {
+  text-align: left; }
 
 /* course introduce */
 .course-menu li {
@@ -299,8 +295,13 @@ h2 {
     padding: 20px 0; }
 
 .course-menu-img {
-  background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/12.jpg);
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/rq-user-photo/bg-ua-camp.jpg);
   min-height: 480px; }
+
+@media (max-width: 568px) {
+  .course-menu li h3 {
+    font-size: 28px;
+    padding-bottom: 15px; } }
 
 .signup-menu {
   padding: 0px 20px 20px 20px;
@@ -322,29 +323,44 @@ h2 {
       line-height: 1.8em; }
 
 .promote-ins {
-  padding: 10px;
+  padding: 15px;
   background-color: #ececec; }
-  .promote-ins a {
+  .promote-ins p {
+    font-size: 18px; }
+  .promote-ins img {
     display: inline-block;
-    width: 50px;
-    height: 50px; }
-    .promote-ins a p {
-      font-size: 18px; }
-    .promote-ins a img {
-      width: 100%;
-      border-radius: 10px; }
+    max-width: 100%;
+    height: auto; }
+
+.img-adjust {
+  width: 70%; }
+
+.promote-grid {
+  border-right: 1px solid #fff; }
+
+@media (max-width: 767px) {
+  .promote-grid {
+    padding-bottom: 35px; } }
 
 @media (max-width: 568px) {
   .promote-ins a {
     display: block;
     margin-bottom: 5px; } }
 
-.date-menu > li {
-  margin-bottom: 10px;
-  padding: 5px 25px 25px 25px;
+.date-menu {
+  padding: 20px 20px 15px 5px;
   border-radius: 3px;
+  line-height: 1.8em;
+  border: 10px solid #454545;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff; }
+  .date-menu h3 {
+    font-size: 30px;
+    margin-top: 5px;
+    padding-bottom: 10px; }
+
+.date-outbox {
+  min-height: 420px; }
 
 .footer-section {
   background-color: #dadada;
